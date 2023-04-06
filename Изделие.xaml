@@ -1,0 +1,29 @@
+﻿<Window x:Class="Швейная_фабрика.Изделие"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Швейная_фабрика"
+        mc:Ignorable="d"
+        Title="Изделия" Height="350" Width="550" Icon="/logo-02.jpg"
+        Background="#FFFCD6"
+        Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0">
+                    <TextBox x:Name="tb1" TextChanged="tb1_TextChanged"/>
+                    <Button Click="Button_Click_1">
+                        <Button.Content>
+                            <TextBlock Style="{StaticResource Button}" Text="Просмотр изделия"></TextBlock>
+                        </Button.Content>
+                    </Button>
+                <Button Click="Button_Click">
+                    <Button.Content>
+                        <TextBlock Style="{StaticResource Button}" Text="Выход"></TextBlock>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+                <DataGrid x:Name="DataGrid1"/>
+            </StackPanel>
+        </Grid>
+</Window>
